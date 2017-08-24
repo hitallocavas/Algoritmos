@@ -1,33 +1,30 @@
-function Vertice(id){
+function Vertice(id, filhos){
   this.id = id;
+  this.filhos = filhos;
 }
 
 
-function Aresta(v1, v2){
-  this.v1 = v1;
-  this.v2 = v2;
-}
 
+var raiz = new Vertice("raiz", null)
+var v1 = new Vertice("v1", null )
+var v2 = new Vertice("v2", null)
+var v3 = new Vertice("v3", null )
+var v4 = new Vertice("v4", null)
+var v5 = new Vertice("v5", null)
+var v6 = new Vertice("v6", null)
 
-qtd_v = 3;
+raiz.filhos = [v1,v2]
+v1.filhos = [v3,v5]
+v2.filhos = [v4,v6]
 
-//Criando Vertices
-var vertices = [];
+buscaProfundidade(raiz)
 
-for (var i = 0; i < qtd_v; i++){
-  vertices[i] = new Vertice(i);
-}
-
-// Criando Arestas
-
-var arestas = [];
-qtd_e = 3;
-for (var i = 0; i < qtd_e; i++) {
-    t = prompt();
-    t2 = prompt();
-    arestas[i] = [t,t2];
-}
-
-for (var i = 0; i < qtd_e; i++) {
-  console.log(arestas[i]);
+function buscaProfundidade(node){
+  var t = node.filhos.lenght;
+  for (var i = 0; i < t; i++) {
+  while(node.filhos[i] != null){
+  alert(node.filhos[i].id)
+  node.filhos[i] = node.filhos[i].filhos;
+  }
+  }
 }
