@@ -1,0 +1,8 @@
+
+public class Three {
+
+	public Three() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

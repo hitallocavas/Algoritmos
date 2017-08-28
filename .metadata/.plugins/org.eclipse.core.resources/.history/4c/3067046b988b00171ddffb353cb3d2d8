@@ -1,0 +1,37 @@
+
+public class No {
+
+	private int filhoEsq;
+	private int filhoDir;
+	private int eu;
+	
+	public No(int filhoEsq, int filhoDir, int eu){
+		this.filhoEsq = filhoEsq;
+		this.filhoDir = filhoDir;
+		this.eu = eu;
+	}
+	
+	public int _filhoEsq(){
+		return this.filhoEsq;
+	}
+	
+	public void setfilhoEsq(int n){
+		this.filhoEsq = n;
+	}
+	
+	public int _filhoDir(){
+		return this.filhoDir;
+	}
+	
+	public void setfilhoDir(int n){
+		this.filhoDir = n;
+	}
+	public int _Eu(){
+		return this.eu;
+	}
+	
+	public void setEu(int n){
+		this.eu = n;
+	}
+	
+}

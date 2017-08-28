@@ -1,0 +1,17 @@
+
+public class Three extends No {
+
+	private No raiz;
+	public Three(No no) {
+		// TODO Auto-generated constructor stub
+		super(no._filhoEsq(), no._filhoDir(), no._Eu());
+		this.raiz = no;
+	}
+	
+	public void insere(No no){
+	int v = this.raiz._Eu();
+	int ctrl = no._Eu();
+	
+	}
+
+}
